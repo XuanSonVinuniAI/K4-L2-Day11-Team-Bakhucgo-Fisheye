@@ -1,0 +1,122 @@
+{
+  "files": [
+    {
+      "file": "00_setup/doctor.txt",
+      "lines": 4,
+      "sha256": "d3aae0e04b2c797fc2101ae9cbed4241b1c19f8f7a69b66ab9385fd7a4c94f97"
+    },
+    {
+      "file": "00_setup/mode.json",
+      "lines": 15,
+      "sha256": "34c5be5f09528f10d289ea6ed22daaf5098994e627cdfec1316d373008b4558a"
+    },
+    {
+      "file": "00_setup/sensor_context.md",
+      "lines": 26,
+      "sha256": "7a2447679a913da7d184b15df7b3142b033f03c2e5863d16565d2c29716fdd2a"
+    },
+    {
+      "file": "parking/annotations.xml",
+      "lines": 83,
+      "sha256": "f1a7289713e0254a46f90a650436b7dfc8830990fbe4aa5a438bdc755f95d9cf"
+    },
+    {
+      "file": "parking/observations.md",
+      "lines": 6,
+      "sha256": "ada51f0fd4b02d8d3f12ec10fdba1dd68db92d8d3d027773bf4b9d1cb52ac3fc"
+    },
+    {
+      "file": "p1_calib/annotations.xml",
+      "lines": 281,
+      "sha256": "5256983a9089f80bb9a4cc329b82c4fe78cf59ea062dcaf28aa571be37488f74"
+    },
+    {
+      "file": "p1_calib/lock.txt",
+      "lines": 29,
+      "sha256": "94b04ba2b511fd38ab9b0255fa943fac49147596154ec04f5cd4aa47f852c5f6",
+      "locked_at": "2026-09-28T18:42:18+07:00"
+    },
+    {
+      "file": "p1_calib/reference.txt",
+      "lines": 3,
+      "sha256": "5b81c3d61c7cd94cd5471199d726495158885d0c2d19315a3dcb17174a674faa",
+      "lock_before_reveal": true
+    },
+    {
+      "file": "p1_calib/compare.md",
+      "lines": 13,
+      "sha256": "9bfbf52601267806d9cc71e0815874273c6a43f5081125d6a2e5a770970825f3"
+    },
+    {
+      "file": "p1_calib/compare.html",
+      "lines": 28,
+      "sha256": "76f59260d2778e2b349c1d9b1cc289b383d7ad83790d39ff8560f4b7e1c17982"
+    },
+    {
+      "file": "findings.csv",
+      "lines": 7,
+      "sha256": "dd29c653ed455338e1436f183fe781646716448e7e0aac0784a2df7ef680587e"
+    },
+    {
+      "file": "40_decision_log.csv",
+      "lines": 1,
+      "sha256": "b08969b09d2c53145049c164142f6d8790d023a7e35a3c3e47eb6836408869f5"
+    },
+    {
+      "file": "45_sampling_plan.csv",
+      "lines": 9,
+      "sha256": "3ce17ef3e9664e95a91f25f6f8ecdc0b7cfb09385ffdc6be8b194a7634f81cca"
+    },
+    {
+      "file": "46_gold_set_plan.md",
+      "lines": 18,
+      "sha256": "494b2cd3c219a83166c1202296574adfcea3ca8e6b844a1c669e813e9df8c30f"
+    }
+  ],
+  "failed_gates": [
+    "Dòng 2: why không hợp lệ: Vẽ Pedestrian riêng cho người có thể đang ngồi trên Bike — theo R03 rider+bike là một box Bike duy nhất không tách Pedestrian",
+    "Dòng 2: owner không hợp lệ: vuong",
+    "Dòng 2: action không hợp lệ: Xóa box L2 Pedestrian; nếu người thực sự đang dắt xe thì vẽ tách Pedestrian+Bike riêng theo R03",
+    "Dòng 3: why không hợp lệ: Bỏ sót ThreeWheeler lớn ở giữa ảnh (x≈327 y≈721 w≈130 h≈128) — vật cao ~128px vượt ngưỡng R01 40px",
+    "Dòng 3: owner không hợp lệ: vuong",
+    "Dòng 3: action không hợp lệ: Vẽ thêm box ThreeWheeler tại vị trí R5 trong CVAT rồi export lại",
+    "Dòng 4: why không hợp lệ: Bỏ sót ThreeWheeler nhỏ hơn cạnh R5 (x≈287 y≈743 w≈51 h≈82) — vật cao ~82px vượt ngưỡng R01 40px",
+    "Dòng 4: owner không hợp lệ: vuong",
+    "… còn 10 lỗi dòng findings nữa (sửa các dòng trên rồi chạy lại)",
+    "findings cần ≥12 dòng (hiện 6)",
+    "findings cần ≥4 cell khác na",
+    "findings cần ≥8 dòng có M trong cell",
+    "findings cần ≥3 dòng vai r1_craft",
+    "findings cần ≥3 dòng vai r2_qa",
+    "findings cần ≥3 dòng vai r3_diag",
+    "findings cần ≥3 zone (hiện 2)",
+    "decision log cần ≥4 entry và ≥1 escalated",
+    "45_sampling_plan.csv chưa phải bảng phân bổ hợp lệ",
+    "Thiếu file r1_craft/annotations.xml",
+    "Thiếu file r1_craft/lock.txt",
+    "Thiếu file r1_craft/selfqc.md",
+    "Thiếu file r1_craft/reference.txt",
+    "Thiếu file r1_craft/compare.md",
+    "Thiếu file r1_craft/compare.html",
+    "Thiếu file r2_qa/qa_review.md",
+    "Thiếu file r2_qa/qa_overlay.html",
+    "Thiếu file r3_diag/local_quality.md",
+    "Thiếu file r3_diag/local_quality.json",
+    "Thiếu file r3_diag/local_quality_conflicts.csv",
+    "Thiếu file r3_diag/local_quality_confusion.csv",
+    "Thiếu file r3_diag/model_compare.md",
+    "Thiếu file r3_diag/model_compare.html",
+    "Thiếu file r3_diag/zone_table.md (chạy python3 lab11.py model)",
+    "Thiếu file rework/annotations-v2.xml",
+    "Thiếu file rework/lock2.txt",
+    "Thiếu file rework/delta.md",
+    "Thiếu file 10_error_card.md (chạy python3 lab11.py card)",
+    "Thiếu file 20_guideline_patch.md (mẫu tự tạo sau python3 lab11.py reference r1_craft)",
+    "Thiếu file 30_escalation_ticket.md (mẫu tự tạo sau python3 lab11.py reference r1_craft)",
+    "Thiếu file 45_review_plan.md (mẫu tự tạo sau python3 lab11.py reference r1_craft)",
+    "Còn TODO trong 45_sampling_plan.csv",
+    "Còn TODO trong 46_gold_set_plan.md",
+    "Thiếu file 50_exit_ticket.md (mẫu tự tạo sau python3 lab11.py reference r1_craft)",
+    "screenshots cần ≥2 ảnh"
+  ]
+}

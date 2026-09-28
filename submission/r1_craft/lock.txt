@@ -1,0 +1,9 @@
+round: r1_craft
+slice: B4-center
+sha256: cecc18ccae1899474e36e159857144f8e01bcb802d49abe66f6483a31ac3e170
+code: CECC-18CC
+locked_at: 2026-09-28T20:32:14+07:00
+shapes: box=19, polygon=9
+prefill_kept: 19
+prefill_edited: 0
+new: 0
