@@ -1,1 +1,5 @@
 id,date,question,decision,rationale,status
+DEC-01,2026-09-28,Xử lý Bike R3 tiền cảnh sát thân xe ego tại adasind_295948.jpg nên vẽ box hay coi là ignore region,Escalate lên Guideline Ops để làm rõ chuẩn ranh giới ignore_region ego_body với vật thể tiền cảnh,Vật thể kích thước lớn ảnh hưởng trực tiếp đến an toàn va chạm tiền cảnh nhưng giao thoa biên thân xe,escalated
+DEC-02,2026-09-28,Phân loại đối tượng L2 tại adasind_271039.jpg là Car hay ThreeWheeler dưới góc méo fisheye,Quyết định sửa class từ Car sang ThreeWheeler theo luật R04,Quan sát thấy kết cấu 3 bánh và mui xe vát đặc trưng của auto-rickshaw dù bị kéo dẹt ở góc rìa,approved
+DEC-03,2026-09-28,Xử lý 2 box Pedestrian L7 và L9 chồng lặp tại adasind_271039.jpg,Quyết định xóa box L7 và giữ lại box L9 bao trọn người đi bộ,L7 và L9 cùng gán cho một người đi bộ ở trung tâm vi phạm quy tắc chống trùng lặp R01,approved
+DEC-04,2026-09-28,Xử lý 4 polygon ignore đều mang reason ego_body tại adasind_295948.jpg thiếu lens_border,Gán lại reason lens_border cho 2 polygon ngoài vành kính và giữ 2 polygon thân xe ego_body,Bảo toàn polygon đo đạc quang học từ đầu theo quy định R08 để phục vụ tính toán méo biên,approved

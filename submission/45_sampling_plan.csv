@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,TODO,TODO
-front,hard,,TODO,TODO
-rear,normal,,TODO,TODO
-rear,hard,,TODO,TODO
-left,normal,,TODO,TODO
-left,hard,,TODO,TODO
-right,normal,,TODO,TODO
-right,hard,,TODO,TODO
+front,normal,30,Bỏ sót xe/người ở khoảng cách trung bình do mật độ giao thông đối diện cao,Đánh giá khả năng nhận diện tiêu chuẩn của camera trước trong điều kiện ánh sáng ban ngày và dòng xe xuôi/ngược chiều
+front,hard,25,Chói sáng ngược chiều ban đêm hoặc bóng râm gắt làm gãy phân đoạn đối tượng và sai class,Tập trung kiểm tra các ca biên khi có đèn pha chiếu trực diện và đối tượng chuyển động cắt ngang đột ngột ở tốc độ cao
+rear,normal,30,Nhầm lẫn giữa phương tiện bám đuôi gần và nắp cốp sau xe ego,Kiểm tra độ chính xác khi lùi xe và phát hiện chướng ngại vật phía sau ở cự ly an toàn tiêu chuẩn
+rear,hard,25,Ống kính bị bám bẩn hoặc đèn pha xe sau rọi chói trực tiếp làm mất chi tiết hình học,Đánh giá rủi ro bỏ sót người đi bộ hoặc xe hai bánh nhỏ áp sát đuôi xe trong điểm mù camera sau
+left,normal,25,Méo quang học hình cầu kéo dãn vật thể ở khoảng cách gần gương chiếu hậu,Kiểm tra khả năng bắt dải vạch đỗ và xe bên cạnh khi chuyển làn hoặc đỗ xe song song
+left,hard,20,Xe máy vượt ẩu cắt qua vùng đường may nối (seam) giữa camera trước và trái,Đánh giá rủi ro gãy track ID và mất đối tượng khi chuyển tiếp giữa hai camera fisheye góc rộng
+right,normal,25,Bị che khuất bởi vỉa hè hoặc các vật thể tĩnh ven đường khi tấp lề,Kiểm tra độ chính xác nhận diện người đi bộ ven đường và xe đạp di chuyển cùng chiều phía bên phụ
+right,hard,20,Vật thể xuất hiện tại góc seam trước-phải và sau-phải trong điều kiện ánh sáng yếu,Tập trung kiểm tra tính nhất quán hình học và chống trùng lặp box khi vật thể nằm trên đường ghép ảnh BEV

@@ -12,3 +12,34 @@ r2_qa,B4-center,adasind_271039.jpg,Missing,L_only,MISSING,,P1,qa,R01,qa_review.m
 r2_qa,B4-center,adasind_295948.jpg,L2,L_only,WRONG_CLASS,,P1,qa,R04,qa_overlay.html L2 Truck tại x≈460 y≈892 w≈194 h≈190 là xe ô tô cá nhân/SUV chở người,,1.0.0,Nghi ngờ xe chở người Car gán nhầm thành Truck
 r2_qa,B4-center,adasind_295948.jpg,ignore_region,L_only,IGNORE_SCOPE,,P0,qa,R08,qa_overlay.html frame 295948 có 4 polygon ignore đều mang reason ego_body thiếu lens_border,,1.0.0,Thiếu polygon lens_border ở rìa ngoài vòng kính theo quy ước
 r2_qa,B4-center,adasind_295948.jpg,Missing,L_only,MISSING,,P1,qa,R01,qa_review.md: xe hai bánh lớn ở tiền cảnh bên phải x≈570..1080 y≈605..1720 chưa có box Bike,,1.0.0,Thiếu box Bike cho xe hai bánh lớn ở tiền cảnh phải
+r1_craft,B4-center,adasind_270517.jpg,R4,na,MISSING,E1_annotator_error,P1,annotator,R01,compare.html R4 MISSING ThreeWheeler tại x≈167 y≈728 w≈102 h≈150,rework,1.0.0,Bỏ sót ThreeWheeler ở giữa-trái ảnh > 40px
+r1_craft,B4-center,adasind_271039.jpg,L8,na,IGNORE_SCOPE,E1_annotator_error,P2,annotator,R09,L8 Pedestrian nằm trong ignore_region,rework,1.0.0,Box nằm trong vùng ignore
+r1_craft,B4-center,adasind_271039.jpg,L2+R9,na,WRONG_CLASS,E1_annotator_error,P1,annotator,R04,L2 Car khớp vị trí R9 ThreeWheeler tại x≈3 y≈822,rework,1.0.0,ThreeWheeler gán nhầm thành Car do méo rìa
+r1_craft,B4-center,adasind_271039.jpg,L7,na,SPURIOUS,E1_annotator_error,P1,annotator,R01,L7 Pedestrian chồng lên L9 Pedestrian tại x≈395 y≈824,rework,1.0.0,Trùng lặp box người đi bộ
+r1_craft,B4-center,adasind_271039.jpg,R4,na,MISSING,E1_annotator_error,P1,annotator,R01,R4 Pedestrian tại x≈992 y≈845 w≈34 h≈130,rework,1.0.0,Bỏ sót người đi bộ sát mép phải
+r1_craft,B4-center,adasind_271039.jpg,R6,na,MISSING,E1_annotator_error,P2,annotator,R01,R6 ThreeWheeler tại x≈98 y≈825 w≈51 h≈42,rework,1.0.0,Xe ba bánh nhỏ gần ngưỡng 40px
+r1_craft,B4-center,adasind_271039.jpg,R10,na,MISSING,E1_annotator_error,P2,annotator,R01,R10 Pedestrian tại x≈261 y≈824 w≈28 h≈85 bị che khuất,rework,1.0.0,Người đi bộ bị occluded phía sau
+r1_craft,B4-center,adasind_295948.jpg,L3,na,IGNORE_SCOPE,E1_annotator_error,P2,annotator,R09,L3 Pedestrian nằm trong ignore_region thân xe,rework,1.0.0,Box rơi vào vùng thân xe
+r1_craft,B4-center,adasind_295948.jpg,L4,na,IGNORE_SCOPE,E1_annotator_error,P2,annotator,R09,L4 Pedestrian nằm trong ignore_region thân xe,rework,1.0.0,Box rơi vào vùng thân xe
+r1_craft,B4-center,adasind_295948.jpg,L2+R1,na,WRONG_CLASS,E1_annotator_error,P1,annotator,R04,L2 Truck khớp vị trí R1 Car tại x≈455 y≈894,rework,1.0.0,Ô tô SUV chở người gán nhầm thành Truck
+r1_craft,B4-center,adasind_295948.jpg,R3,na,MISSING,E1_annotator_error,P1,annotator,R01,R3 Bike tại x≈570 y≈605 w≈510 h≈1115,rework,1.0.0,Xe hai bánh tiền cảnh kích thước lớn bị bỏ sót
+r3_diag,B4-center,adasind_270517.jpg,L5+R2,LR_noM,MISSING,E4_model_domain,P2,ai_team,R04,L5 và R2 là ThreeWheeler lớn nhưng model không nhận diện được,keep_with_reason,1.0.0,Model bỏ sót ThreeWheeler bị méo fisheye
+r3_diag,B4-center,adasind_270517.jpg,R4,R_only,MISSING,E1_annotator_error,P1,annotator,R01,R4 ThreeWheeler cả L và M đều bỏ sót,rework,1.0.0,Cả người và model đều sót xe ba bánh này
+r3_diag,B4-center,adasind_270517.jpg,M5,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R02,M5 là box ảo do model sinh ra trên nền đường,keep_with_reason,1.0.0,False positive của model
+r3_diag,B4-center,adasind_270517.jpg,M6,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R02,M6 box ảo trên vùng bóng râm,keep_with_reason,1.0.0,False positive của model do bóng râm
+r3_diag,B4-center,adasind_270517.jpg,M7,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R02,M7 box ảo ở lề đường,keep_with_reason,1.0.0,Model dự đoán nhầm chướng ngại vật tĩnh thành xe
+r3_diag,B4-center,adasind_270517.jpg,M9,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R02,M9 box ảo,keep_with_reason,1.0.0,Model dự đoán sai vật thể
+r3_diag,B4-center,adasind_270517.jpg,M10,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R02,M10 box ảo ở rìa,keep_with_reason,1.0.0,Méo fisheye khiến model sinh box ảo
+r3_diag,B4-center,adasind_270517.jpg,M11,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R02,M11 box ảo ngoài vành kính,keep_with_reason,1.0.0,Model sinh box ở vùng lens border
+r3_diag,B4-center,adasind_271039.jpg,L2+M9,LM_noR,SPURIOUS,E1_annotator_error,P1,annotator,R04,L2 và M9 gán class Car nhưng ref là ThreeWheeler,rework,1.0.0,Cả L và M đều nhầm ThreeWheeler thành Car
+r3_diag,B4-center,adasind_271039.jpg,L7+M8,LM_noR,SPURIOUS,E1_annotator_error,P1,annotator,R01,L7 và M8 đều vẽ thêm 1 box Pedestrian trùng L9,rework,1.0.0,Box trùng lặp đè lên cùng 1 người
+r3_diag,B4-center,adasind_271039.jpg,R4+M4,RM_noL,MISSING,E1_annotator_error,P1,annotator,R01,R4 và M4 đều thấy Pedestrian ở mép phải nhưng L bỏ sót,rework,1.0.0,Annotator bỏ sót người đi bộ ở mép phải
+r3_diag,B4-center,adasind_271039.jpg,R6,R_only,MISSING,E1_annotator_error,P2,annotator,R01,R6 ThreeWheeler nhỏ chỉ có trong reference,rework,1.0.0,Vật thể nhỏ sát ngưỡng 40px
+r3_diag,B4-center,adasind_271039.jpg,R9,R_only,MISSING,E1_annotator_error,P1,annotator,R04,R9 ThreeWheeler bị L gán nhầm Car,rework,1.0.0,Sót do sai class
+r3_diag,B4-center,adasind_271039.jpg,R10,R_only,MISSING,E1_annotator_error,P2,annotator,R01,R10 Pedestrian bị occluded,rework,1.0.0,Người đi bộ bị che khuất
+r3_diag,B4-center,adasind_271039.jpg,M11,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R02,M11 box ảo của model,keep_with_reason,1.0.0,False positive model
+r3_diag,B4-center,adasind_271039.jpg,M12,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R02,M12 box ảo của model ở rìa,keep_with_reason,1.0.0,False positive model
+r3_diag,B4-center,adasind_295948.jpg,L2+M2,LM_noR,SPURIOUS,E1_annotator_error,P1,annotator,R04,L2 và M2 gán nhầm Truck cho xe Car,rework,1.0.0,L2 Truck sai class
+r3_diag,B4-center,adasind_295948.jpg,R1,R_only,MISSING,E1_annotator_error,P1,annotator,R04,R1 Car bị L gán nhầm thành Truck,rework,1.0.0,Sót Car do nhầm Truck
+r3_diag,B4-center,adasind_295948.jpg,R3,R_only,MISSING,E2_guideline_gap,P0,guideline,R06,R3 Bike lớn bị ignore hoặc cắt rìa,escalate,1.0.0,Ca xe hai bánh lớn tiền cảnh cần escalation hướng dẫn về ranh giới ignore_region thân xe
+r3_diag,B4-center,adasind_295948.jpg,M6,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R02,M6 box ảo do model sinh ra,keep_with_reason,1.0.0,False positive của model
